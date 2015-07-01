@@ -1,0 +1,75 @@
+// Hide content for mobile devices
+@mixin ma-hide-mobile {
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+@mixin ma-row($display: block) {
+  @include row($display);
+  margin-bottom: modular-scale(0);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+  @include media($desktop) {
+    margin-bottom: modular-scale(2);
+  }
+}
+
+@mixin ma-container($local-max-width: $max-width) {
+  @include clearfix;
+  padding-left: modular-scale(1);
+  padding-right: modular-scale(1);
+  @include media($desktop) {
+    @include outer-container($local-max-width);
+  }
+}
+
+// Sets up a responsive grid for the number of $rows
+// On mobile the columns will just all be inline
+@mixin ma-columns($rows) {
+  @include ma-row(table);
+  .column {
+    @include media($desktop) {
+      @include span-columns($grid-columns / $rows);
+    }
+  }
+}
+
+// Generate linea arrow icon
+@mixin ma-arrow-icon($arrow) {
+  font-family: "linea-arrows-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: $arrow;
+}
+
+// Generate hamburger
+@mixin icon-hamburger {
+  font-family: "linea-arrows-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e032";
+}
+
+@mixin ma-unordered-list {
+  list-style-type: disc;
+  margin-bottom: $small-spacing;
+  padding-left: $base-spacing;
+  text-align: left;
+}
