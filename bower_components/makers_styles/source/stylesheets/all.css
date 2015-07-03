@@ -183,7 +183,7 @@ textarea {
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
-    border-color: #3AA06D;
+    border-color: #003340;
     box-shadow: none;
     outline: none; }
 
@@ -407,7 +407,7 @@ p {
       font-size: 18px; } }
 
 a {
-  color: #3AA06D;
+  color: #003340;
   text-decoration: underline;
   transition: color 0.1s linear; }
   a:active, a:focus, a:hover {
@@ -664,7 +664,7 @@ section {
           display: table; } }
 
 .backgrounded, .hero, .hero-splash, .hero-small, .hero--apply {
-  background-color: #3AA06D;
+  background-color: #003340;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
