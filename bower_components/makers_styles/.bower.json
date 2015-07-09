@@ -1,28 +1,32 @@
 {
   "name": "makers_styles",
-  "version": "0.2.4",
+  "version": "2.0.0",
   "authors": [
     "Makers Engineering <dev@makersacademy.com>"
   ],
-  "main": "source/sass/all.scss",
+  "main": [
+    "source/sass/all.scss",
+    "source/javascripts/all.js"
+  ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
-    "spec",
-    "bower_components",
-    "build",
-    "lib"
+    "*",
+    "!source/stylesheets/**",
+    "!source/sass/**",
+    "!source/fonts/**",
+    "!source/images/**",
+    "!source/javascripts/**",
+    "!data/**"
   ],
   "dependencies": {},
   "homepage": "https://github.com/makersacademy/site-mvp",
-  "_release": "0.2.4",
+  "_release": "2.0.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.4",
-    "commit": "2d8fdc327df763131d30836208a51df65132b224"
+    "tag": "v2.0.0",
+    "commit": "4146c6661028bec015c9e833eb1acaa1067fdbbf"
   },
   "_source": "git://github.com/makersacademy/site-mvp.git",
-  "_target": "~0.2.4",
-  "_originalSource": "makers_styles",
-  "_direct": true
+  "_target": "~2.0.0",
+  "_originalSource": "makers_styles"
 }

@@ -7,6 +7,7 @@
 //= require mixpanel-email-capture
 //= require navigation
 //= require jquery.fixedscroll
+//= require doorbell
 
 $(document).ready(function() {
 
@@ -30,6 +31,7 @@ $(document).ready(function() {
 
   // set up sliders using Slick
   // set up email capture using AJAXChimp
+  // set up instant feedback form using doorbell.io
   $('.email-capture').ajaxChimp({
     callback: mixpanelEmailCapture
   });

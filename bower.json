@@ -13,6 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "makers_styles": "~0.2.4"
+    "makers_styles": "~2.0.0"
   }
 }
