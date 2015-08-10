@@ -1,3 +1,3 @@
 # Tech City Fellowship
 
-The Tech City Fellowship landing page website hosted on http://techcityfellowship.org/
+The Tech City Fellowship landing page website, hosted on http://techcityfellowship.org/
